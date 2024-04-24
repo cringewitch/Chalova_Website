@@ -1,0 +1,52 @@
+body { 
+    background-color: #DDDBFF;
+    font-family: 'Palatino', URW Palladio L, serif;
+    font-size: large;
+    color: #220D33;
+}
+.my_photo {
+    background: url(../image/bouncing.gif) no-repeat center center;
+    background-size: 100%;
+    width: 250px;
+    height: 250px;
+}
+.nav_logo {
+    background: url(../image/17139949151421zsez1no.png) no-repeat center center;
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+}
+.nav_bar {
+    font-size: 30px;
+    font-weight: bold;
+}
+.container {
+    margin-top: 30%;
+}
+.row {
+
+}
+.col-8 {
+
+}
+.col-4 {
+
+}
+.col-3.nav_logo {
+
+}
+.col-9 {
+
+}
+.nav_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img_size {
+
+}
+.title_photo {
+    text-align: center;
+    margin-right: 27px;
+}

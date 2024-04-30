@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
             <div class="index col-12">
-                <h1> Авторизуйтесь :( </h1>
+                <h1> Постики <3 </h1>
             <?php
             if (!isset($_COOKIE['User'])) {
             ?>
@@ -22,6 +22,17 @@
             <?php
             } else {
                 // подключение к БД
+                $link = mysqli_connect('127.0.0.1','root','!Sb0duN@-16','first');
+
+                $sql = "SELECT * FROM posts";
+                $res = mysqli_query($link, $sql);
+                if (mysqli_num_rows($res) >  0) {
+                    while ($post = mysqli_fetch_array($res)) {
+                        echo "<a href='/posts.php?id=" . $post["id"] . "'>" . $post['title'] . "</a><br>";
+                    }
+                   } else {
+                        echo "Записей пока нет";
+                   }
             }
             ?>
             </div>
